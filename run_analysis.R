@@ -43,11 +43,11 @@
         ##write.table(full_data_act_desc,file="./full_data.txt", sep = " ", col.names = TRUE, row.names = FALSE)
 
 ##Get all the columns with Mean and get the sub set of data with column names as mean
-        meancol<-grep("mean" ,namesr)
+        meancol<-grep("mean" ,namesrw)
         meantest_set<-full_data_act_desc[,meancol]
 
 ##Get all the columns with STD and get the sub set of data with column names as STD
-        stdcol<-grep("std",namesr)
+        stdcol<-grep("std",namesrw)
         stdtest_set<-full_data_act_desc[,stdcol]
         
 ##Create subset with mean , std , subject and Activity description columns
